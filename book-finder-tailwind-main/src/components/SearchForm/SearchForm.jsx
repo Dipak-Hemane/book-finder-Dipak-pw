@@ -23,7 +23,7 @@ const SearchForm = () => {
   };
 
   return (
-    <div className='w-full'>
+    <div className='w-full h-full'>
       <form 
         onSubmit={handleSubmit} 
         className='flex items-center bg-white rounded-full shadow-xl overflow-hidden'
@@ -33,12 +33,12 @@ const SearchForm = () => {
             type="text" 
             ref={searchText}
             placeholder='Search for books, authors, genres...' 
-            className='w-full px-8 py-5 text-2xl text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500'
+            className='w-full px-8 py-7 text-2xl text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500'
           />
         </div>
         <button 
           type="submit" 
-          className='bg-blue-600 hover:bg-blue-700 text-white px-8 py-5 text-xl transition-colors duration-300 flex items-center'
+          className='bg-blue-600 hover:bg-blue-700 text-white px-8 py-8 text-xl transition-colors duration-300 flex items-center'
         >
           <FaSearch className='mr-3' />
           <span>Search</span>
